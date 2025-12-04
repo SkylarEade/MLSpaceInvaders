@@ -1,7 +1,6 @@
 import numpy as np
 import gymnasium as gym
 import ale_py
-import torch
 import cv2
 
 
@@ -36,3 +35,7 @@ class Critic():
         pass
 
 class NetworkHandler():
+    def __init__(self):
+        self.actor = Actor()
+        self.critic = Critic()
+        
